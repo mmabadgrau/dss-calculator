@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>Applets</title>
+        <vendor>mabad</vendor>
+        <homepage href=""/>
+        <description>Applets</description>
+        <description kind="short">Applets</description>
+    </information>
+    <update check="always"/>
+    <security>
+<all-permissions/>
+</security>
+    <resources>
+        <j2se java-vm-args="-Djava.security.policy=applet.policy" version="1.6+"/>
+        <jar href="Applets.jar" main="true"/>
+    <jar href="lib/AbsoluteLayout.jar"/>
+<jar href="lib/beansbinding-1.2.1.jar"/>
+</resources>
+    <applet-desc height="300" main-class="Classifier" name="Applets" width="300">
+    </applet-desc>
+</jnlp>
